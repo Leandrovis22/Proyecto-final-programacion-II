@@ -1,48 +1,6 @@
-@media (max-width: 755px) {
-    .div-footer {
-        position: static !important;
-
-    }
-
-}
-
-@media (max-width: 531px) {
-    .img-header {
-        width: 32% !important;
-
-    }
-
-}
-
-@media (max-width: 965px) {
-    .row {
-
-        display: block !important;
-
-    }
-
-    .container {
-        padding: 5% !important;
-    }
-
-    .div-button {
-        display: flex !important;
-        flex-wrap: wrap !important;
-        justify-content: flex-end !important;
-        text-align: center !important;
-    }
-    .padding-footer{
-        padding-left: 5% !important;
-        padding-right: 5% !important;
-    }
-    .mascota-ingresar{
-        flex-wrap: wrap !important;
-        justify-content: center !important;
-    }
-    .div-mascota{
-        padding-bottom: 5% !important;
-    }
-
+/* === RESET Y BASE === */
+* {
+    box-sizing: border-box;
 }
 
 body {
@@ -52,10 +10,7 @@ body {
     color: black;
 }
 
-a:-webkit-any-link {
-    color: white !important;
-}
-
+/* === HEADER === */
 header {
     background-color: #8844a4;
     padding: 0;
@@ -63,6 +18,75 @@ header {
     width: auto;
 }
 
+.div-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 14%;
+    padding-right: 14%;
+}
+
+.img-header {
+    width: 200px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.div-login {
+    display: flex;
+}
+
+.div-login a {
+    text-decoration: none;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+a:-webkit-any-link {
+    color: white !important;
+}
+
+/* === TÍTULO PRINCIPAL === */
+.welcome-title {
+    color: #8844a4;
+    margin-top: 4%;
+    margin-bottom: 4%;
+    justify-content: center;
+    display: flex;
+}
+
+/* === IMAGEN HERO === */
+.hero-image {
+    width: 100%;
+}
+
+/* === SECCIÓN MASCOTAS === */
+.mascota-ingresar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 14%;
+    padding-right: 14%;
+    margin-top: -5%;
+}
+
+.div-mascota {
+    display: flex;
+    flex-direction: column;
+}
+
+.mascota-title {
+    color: #8844a4;
+    font-weight: bold;
+    font-size: 2em;
+    margin: 0%;
+}
+
+.vineta-violeta {
+    width: 63px;
+}
+
+/* === BOTONES === */
 .myButton {
     background-color: transparent;
     border-radius: 42px;
@@ -89,8 +113,17 @@ header {
     text-decoration: none;
 }
 
-* {
-    box-sizing: border-box;
+/* === FORMULARIO === */
+.form-container {
+    margin-bottom: 10%;
+    display: flex;
+    align-items: center;
+    margin-left: 14%;
+    margin-right: 14%;
+    margin-top: 4%;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    border-radius: 15px;
 }
 
 .container {
@@ -114,6 +147,7 @@ header {
     padding-right: 16px;
 }
 
+/* === INPUTS === */
 input[type="text"],
 input[type="number"],
 select,
@@ -127,6 +161,13 @@ textarea {
     box-sizing: border-box;
 }
 
+.radio-group {
+    display: flex;
+    justify-content: space-evenly;
+    height: 58px;
+    align-items: center;
+}
+
 .custom-file-upload {
     width: 100%;
     padding: 12px 20px;
@@ -136,15 +177,163 @@ textarea {
     border-radius: 42px;
     box-sizing: border-box;
     cursor: pointer;
-    /* Cambia el cursor al pasar el mouse */
     text-align: center;
     color: #333;
-    /* Color del texto */
     background-color: #fff;
-    /* Color de fondo */
 }
 
-/* Estilo para el input oculto */
 #file-upload {
     display: none;
+}
+
+/* === ELEMENTOS DEL FORMULARIO === */
+.add-characteristic,
+.add-photo {
+    display: flex;
+    justify-content: flex-end;
+    color: #0c9db3;
+}
+
+.empty-label {
+    visibility: hidden;
+}
+
+.div-button {
+    padding-top: 4%;
+    margin-bottom: 0;
+    align-items: center;
+}
+
+.required-fields {
+    color: #8844a4;
+}
+
+/* === FOOTER === */
+.footer {
+    color: white;
+    padding-top: 10%;
+    background-image: url(./assets/footer-removebg-preview.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.div-footer {
+    position: relative;
+    bottom: 48px;
+}
+
+.footer-title {
+    justify-content: center;
+    display: flex;
+    font-size: 140%;
+}
+
+.vineta-container {
+    display: flex;
+    justify-content: center;
+    margin-top: -11px;
+}
+
+.vineta-blanca {
+    width: 63px;
+    justify-content: center;
+    display: flex;
+}
+
+.footer-description {
+    padding-left: 27%;
+    padding-right: 27%;
+    text-align: center;
+    padding-top: 2%;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: center;
+}
+
+.contact-item {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.contact-item-mail {
+    padding-left: 3%;
+    justify-content: flex-start;
+}
+
+.contact-icon {
+    width: 12%;
+}
+
+.contact-details {
+    padding-left: 1%;
+}
+
+.footer-divider {
+    height: 1px;
+    color: white;
+    position: relative;
+    margin-right: 4%;
+    margin-left: 4%;
+}
+
+.copyright {
+    margin: 0;
+    padding-left: 27%;
+    padding-right: 27%;
+    text-align: center;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    font-size: small;
+}
+
+/* === MEDIA QUERIES === */
+@media (max-width: 965px) {
+    .div-header {
+        padding-left: 3% !important;
+        padding-right: 3% !important;
+    }
+
+    .row {
+        display: block !important;
+    }
+
+    .container {
+        padding: 5% !important;
+    }
+
+    .div-button {
+        display: flex !important;
+        flex-wrap: wrap !important;
+        justify-content: space-between !important;
+        text-align: center !important;
+    }
+    
+    .padding-footer {
+        padding-left: 5% !important;
+        padding-right: 5% !important;
+    }
+    
+    .mascota-ingresar {
+        flex-wrap: wrap !important;
+        justify-content: space-between !important;
+    }
+    
+    .div-mascota {
+        padding-bottom: 5% !important;
+    }
+}
+
+@media (max-width: 755px) {
+    .div-footer {
+        position: static !important;
+    }
+}
+
+@media (max-width: 531px) {
+    .img-header {
+        width: 32% !important;
+    }
 }
