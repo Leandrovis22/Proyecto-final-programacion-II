@@ -47,7 +47,7 @@ a:-webkit-any-link {
 }
 
 /* === TÍTULO PRINCIPAL === */
-.welcome-title {
+.titulo-bienvenida {
     color: #8844a4;
     margin-top: 4%;
     margin-bottom: 4%;
@@ -56,7 +56,7 @@ a:-webkit-any-link {
 }
 
 /* === IMAGEN HERO === */
-.hero-image {
+.imagen-hero {
     width: 100%;
 }
 
@@ -75,7 +75,7 @@ a:-webkit-any-link {
     flex-direction: column;
 }
 
-.mascota-title {
+.mascota-titulo {
     color: #8844a4;
     font-weight: bold;
     font-size: 2em;
@@ -87,7 +87,7 @@ a:-webkit-any-link {
 }
 
 /* === BOTONES === */
-.myButton {
+.miBoton {
     background-color: transparent;
     border-radius: 42px;
     border: 1px solid #0c9db3;
@@ -100,7 +100,7 @@ a:-webkit-any-link {
     text-decoration: none;
 }
 
-.myButton1 {
+.miBoton1 {
     background-color: #0c9db3;
     border-radius: 42px;
     border: 1px solid #0c9db3;
@@ -133,13 +133,13 @@ a:-webkit-any-link {
     padding: 40px;
 }
 
-.row {
+.fila {
     display: flex;
     justify-content: space-between;
     margin-bottom: 20px;
 }
 
-.column {
+.columna {
     flex: 1;
     padding-top: 3px;
     padding-bottom: 3px;
@@ -161,14 +161,14 @@ textarea {
     box-sizing: border-box;
 }
 
-.radio-group {
+.radio-grupo {
     display: flex;
     justify-content: space-evenly;
     height: 58px;
     align-items: center;
 }
 
-.custom-file-upload {
+.carga-archivo {
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
@@ -188,23 +188,23 @@ textarea {
 
 /* === ELEMENTOS DEL FORMULARIO === */
 .add-characteristic,
-.add-photo {
+.añadir-foto {
     display: flex;
     justify-content: flex-end;
     color: #0c9db3;
 }
 
-.empty-label {
+.label-vacio {
     visibility: hidden;
 }
 
-.div-button {
+.div-boton {
     padding-top: 4%;
     margin-bottom: 0;
     align-items: center;
 }
 
-.required-fields {
+.campos-requeridos {
     color: #8844a4;
 }
 
@@ -223,7 +223,7 @@ textarea {
     bottom: 48px;
 }
 
-.footer-title {
+.footer-titulo {
     justify-content: center;
     display: flex;
     font-size: 140%;
@@ -241,37 +241,37 @@ textarea {
     display: flex;
 }
 
-.footer-description {
+.footer-descripcion {
     padding-left: 27%;
     padding-right: 27%;
     text-align: center;
     padding-top: 2%;
 }
 
-.contact-info {
+.contacto-info {
     display: flex;
     justify-content: center;
 }
 
-.contact-item {
+.contacto-item {
     display: flex;
     justify-content: flex-end;
 }
 
-.contact-item-mail {
+.contacto-item-mail {
     padding-left: 3%;
     justify-content: flex-start;
 }
 
-.contact-icon {
+.contacto-icon {
     width: 12%;
 }
 
-.contact-details {
+.contacto-details {
     padding-left: 1%;
 }
 
-.footer-divider {
+.footer-divisor {
     height: 1px;
     color: white;
     position: relative;
@@ -296,7 +296,7 @@ textarea {
         padding-right: 3% !important;
     }
 
-    .row {
+    .fila {
         display: block !important;
     }
 
@@ -304,7 +304,7 @@ textarea {
         padding: 5% !important;
     }
 
-    .div-button {
+    .div-boton {
         display: flex !important;
         flex-wrap: wrap !important;
         justify-content: space-between !important;
